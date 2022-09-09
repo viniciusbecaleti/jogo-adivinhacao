@@ -1,0 +1,106 @@
+:root {
+  font-size: 6.25%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 16rem;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  background: linear-gradient(287.56deg, #C2E9FB 0%, #A1C4FD 100%);
+}
+
+body, button, input {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  width: 90%;
+  max-width: 428rem;
+  margin: 0 auto;
+  padding: 48rem;
+  border-radius: 6rem;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24rem;
+  font-weight: 500;
+  color: #34355B;
+  margin-bottom: 16rem;
+}
+
+h2 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 24rem;
+  line-height: 36rem;
+  margin-bottom: 32rem;
+}
+
+p {
+  line-height: 1.5;
+  color: rgba(52, 53, 91, 0.8);
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 48rem;
+}
+
+input, button {
+  border: none;
+  padding: 16rem;
+  font-size: 16rem;
+}
+
+input {
+  max-width: 50rem;
+  text-align: center;
+  border-radius: 4rem 0 0 4rem;
+  background-color: #DCE2E9;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+button {
+  font-weight: 700;
+  color: white;
+  border-radius: 0 4rem 4rem 0;
+  background-color: #7879F1;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #6363ce;
+}
+
+.restart {
+  border-radius: 4rem;
+}

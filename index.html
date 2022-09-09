@@ -5,8 +5,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jogo da Adivinhação</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+  <main>
+    <div data-start class="start">
+      <h1>Jogo da Adivinhação</h1>
+      <p>Adivinhe o número entre 0 e 10</p>
+
+      <form method="POST">
+        <input data-number type="number" min="0" max="10" required>
+        <button data-button="try">Tentar</button>
+      </form>
+    </div>
+
+    <div data-end class="end hidden">
+      <h2>Acertou em <span data-attempts></span> tentativa(s)!</h2>
+
+      <button data-button="restart" class="restart" type="button">Jogar novamente</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
