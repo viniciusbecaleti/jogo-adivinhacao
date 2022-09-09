@@ -3,7 +3,7 @@ const buttonRestart = document.querySelector('[data-button="restart"]')
 const sceneStart = document.querySelector('[data-start]')
 const sceneEnd = document.querySelector('[data-end]')
 const spanAttempts = document.querySelector('[data-attempts]')
-const randomNumber = Math.round(Math.random() * 10)
+let randomNumber = Math.round(Math.random() * 10)
 let attempts = 1
 
 function handleClick(event) {
@@ -26,6 +26,7 @@ function toggleScene() {
 }
 
 buttonTry.addEventListener('click', handleClick)
+
 buttonRestart.addEventListener('click', () => {
   toggleScene()
   randomNumber = Math.round(Math.random() * 10)
